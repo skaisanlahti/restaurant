@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -119,15 +119,15 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/*=== App overview ===\r\n=============================================================================*/\r\n\r\n/*=== Imports ===\r\n=============================================================================*/\r\n\r\n\r\n/*=== Event System ===\r\n=============================================================================*/\r\nlet events = {\r\n    events: {},\r\n    addListener: function(eventName, listener){\r\n        this.events[eventName] = this.events[eventName] || []; // returns an empty array if event doesn't exist\r\n        this.events[eventName].push(listener);\r\n    },\r\n    removeListener: function(eventName, listener){\r\n        if (this.events[eventName]){\r\n            for (let i = 0; i < this.events[eventName].length; i++){\r\n                if (this.events[eventName][i] === listener){\r\n                    this.events[eventName].splice(i, 1);\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n    },\r\n    trigger: function(eventName, data){\r\n        if (this.events[eventName]){\r\n            this.events[eventName].forEach(function(listener){\r\n                listener(data);\r\n            });\r\n        }\r\n    }\r\n}\r\n\r\n/*=== Tests ===\r\n=============================================================================*/\r\nlet strTest = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join([\"hello\", \"webpack\"], \" \");\r\nconsole.log(strTest);\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/*=== App overview ===\r\n=============================================================================*/\r\n\r\n/*=== Imports ===\r\n=============================================================================*/\r\n\r\n\r\n/*=== Event System ===\r\n=============================================================================*/\r\nlet events = {\r\n    events: {},\r\n    addListener: function(eventName, listener){\r\n        this.events[eventName] = this.events[eventName] || []; // returns an empty array if event doesn't exist\r\n        this.events[eventName].push(listener);\r\n    },\r\n    removeListener: function(eventName, listener){\r\n        if (this.events[eventName]){\r\n            for (let i = 0; i < this.events[eventName].length; i++){\r\n                if (this.events[eventName][i] === listener){\r\n                    this.events[eventName].splice(i, 1);\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n    },\r\n    trigger: function(eventName, data){\r\n        if (this.events[eventName]){\r\n            this.events[eventName].forEach(function(listener){\r\n                listener(data);\r\n            });\r\n        }\r\n    }\r\n}\r\n\r\n/*=== Tests ===\r\n=============================================================================*/\r\nlet strTest = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join([\"Hello\", \"Webpack\", \"Configuration!\"], \" \");\r\nconsole.log(strTest);\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

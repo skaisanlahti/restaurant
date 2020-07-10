@@ -34,5 +34,5 @@ let events = {
 
 /*=== Tests ===
 =============================================================================*/
-let strTest = _.join(["hello", "webpack"], " ");
+let strTest = _.join(["Hello", "Webpack", "Configuration!"], " ");
 console.log(strTest);
