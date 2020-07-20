@@ -1,1 +1,3 @@
-console.log(`Placeholder bundle for vendor specific code.`);
+/*=== Placeholder Bundle ===
+=============================================================================*/
+// console.log(`Placeholder bundle for vendor code.`);

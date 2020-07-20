@@ -1,5 +1,8 @@
+/*=== Base Styles ===
+=============================================================================*/
 body {
     font: 16px raleway;
+    min-height: 100vh;
 }
 body, select, input, textarea {
     color:hsl(25,5%,10%);
@@ -16,12 +19,12 @@ a {
 }
 
 ::-moz-selection{
-    background: #fcd700;
+    background: hsl(220,50%,50%);
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: #fcd700;
+    background: hsl(220,50%,50%);
     color: #fff;
     text-shadow: none;
 }
