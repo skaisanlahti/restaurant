@@ -1,3 +1,10 @@
 @import "_fonts.scss";
 @import "_reset.scss";
 @import "_base.scss";
+
+body {
+    background-image: url("../assets/imgs/ffxiv_14072020_004427_987.jpg");
+}
+h1 {
+    color: red;
+}

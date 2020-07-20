@@ -1,0 +1,1 @@
+console.log(`Placeholder bundle for vendor specific code.`);
