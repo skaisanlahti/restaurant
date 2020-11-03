@@ -41,7 +41,7 @@
 
 ## About The Project
 
-Simple restaurant front-end page theme after the Monster Hunter franchise. The main goal was to learn how to work with Webpack configurations to bundle up code.
+Simple restaurant front-end page theme after the Monster Hunter franchise. The main goal was to learn how to work with Webpack configurations to bundle up code and to add image and font assets.
 
 The project was made following along The Odin Project learning materials for ReactJS and the project instructions can be found [here](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page).
 
